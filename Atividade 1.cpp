@@ -4,14 +4,14 @@
 int main(){
 	
 	char categoria = '#';
-	float media, quantidade, soma, total = 0; 				// Variáveis Alteradas para garantir o resultado em float
+	float media, quantidade = 0, soma, total = 0; 				// Variáveis Alteradas para garantir o resultado em float
 
 	do
 	{
 		printf("Informe a Categoria: ");
 		scanf(" %c", &categoria);							// O espaço no inicio garante que nenhum lixo entre na variavel.
 
-		while(quantidade <= 0)								// Garantia que quantidade será maior que 0
+		while(quantidade < 1)								// Garantia que quantidade será maior que 0
 		{
 			printf("Informe a Quantidade: ");
 			scanf("%f", &quantidade);

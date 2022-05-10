@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-//#include <math.h>
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
@@ -10,9 +9,9 @@ int main(){
 	char repeticao;
 	int contador, numerador, descarte;
 	
-	do
+	do																			// Laço de repetição principal
 	{
-		do
+		do																		// Garantia de limite inferior
 		{
 			printf("\nInfore o valor do limite inferior do intervalo: ");
 			scanf("%d", &limite_inferior);	
@@ -23,7 +22,7 @@ int main(){
 			}
 		}while(limite_inferior < 1);
 			
-		do
+		do																		// Garantia de limite superior
 		{	
 			printf("\nInfore o valor do simite superior do intervalo: ");
 			scanf("%d", &limite_superior);
@@ -51,6 +50,7 @@ int main(){
 			}
 			descarte = numerador % 2;
 			
+			//----- Busca por números primos
 			if(descarte != 0)
 			{
 				descarte = numerador % 3;
@@ -65,6 +65,7 @@ int main(){
 			
 						if(descarte != 0)
 						{
+							//----- Imprime na tela os números primos
 							printf("%d ",numerador);
 							
 							contador++;
@@ -77,7 +78,7 @@ int main(){
 					}	
 				}	
 			}
-			
+			//----- Fim da busca
 										
 			numerador++;
 		}

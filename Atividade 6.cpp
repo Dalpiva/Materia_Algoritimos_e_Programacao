@@ -7,10 +7,9 @@ int main(void){
 	int numero;
 	char repetir;
 	
-	do
+	do															// Laço de repetição de programa
 	{
-		
-		do
+		do														// Laço de garantia de parâmetros
 		{
 			printf("\nDigite um número inteiro positivo: ");
 			scanf("%d", &numero);

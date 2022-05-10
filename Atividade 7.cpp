@@ -2,6 +2,10 @@
 #include <locale.h>
 #include <math.h>
 
+
+//----------------------------------------------------------------------//
+//						Função para calcular o troco					//
+//----------------------------------------------------------------------//
 int calculadora_de_troco(int valor_da_compra){
 	
 	//----- Declaração de variáveis
@@ -87,6 +91,9 @@ int calculadora_de_troco(int valor_da_compra){
 	printf("%d nota(s) de 1\n", moedas);		
 }
 
+//----------------------------------------------------------------------//
+//							Função Principal							//
+//----------------------------------------------------------------------//
 int main(void){
 	setlocale(LC_ALL, "Portuguese");
 	

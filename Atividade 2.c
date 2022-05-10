@@ -33,7 +33,7 @@ int main(){
 		}
 		
 	}else{
-		printf("\nQue Bom que você está saudavel!");
+		printf("\nÓtimo, o paciente está saudavel!");
 	}
 	
 	return (0);

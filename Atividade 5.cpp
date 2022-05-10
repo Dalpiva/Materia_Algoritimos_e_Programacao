@@ -7,7 +7,7 @@ int main(void){
 	
 	int num_magico, palpite;
 	
-	num_magico = rand() % 11;
+	num_magico = rand() % 11;									// 11 números de 0 à 10
 	
 	printf("Dê o seu palpite sobre o número mágico: ");
 	scanf("%d", &palpite);

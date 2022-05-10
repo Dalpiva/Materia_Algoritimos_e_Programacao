@@ -11,7 +11,7 @@ int main (void)
 	printf("Informe o segundo valor: ");
 	scanf("%d", &num2);
 	
-	if(num1 == 0 || num2 == 0)
+	if(num1 == 0 || num2 == 0)									// Alterado o local da verificação de zeros
 	{
 		printf("Não é possivel realizar divisão por zero\n");
 	} 
@@ -24,5 +24,5 @@ int main (void)
 		resto = num2 % num1;	
 	}
 	
-	printf("O resto da divisão é %f\n", resto);
+	printf("O resto da divisão é %.2f\n", resto);
 }
